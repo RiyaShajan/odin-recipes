@@ -2,16 +2,78 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Main Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin Recipes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            text-align: center;
+            background-color: #f5f0e6;
+            color: #3e2f1c;
+            font-family: 'Poppins', sans-serif;
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            color: #1f4d2b;
+            margin-bottom: 40px;
+        }
+
+        .recipe {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            background-color: #fff9f0;
+            border-radius: 12px;
+            padding: 15px 20px;
+            margin: 15px auto;
+            max-width: 700px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-decoration: none;
+            color: #1f4d2b;
+        }
+
+        .recipe img {
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            margin-right: 20px;
+            object-fit: cover;
+        }
+
+        .recipe:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+            color: #6b4e2e;
+        }
+
+        .recipe h2 {
+            font-family: 'Playfair Display', serif;
+            margin: 0;
+            font-size: 20px;
+        }
+    </style>
 </head>
 <body>
-  <h1>Odin Recipes</h1>
-  <a href="recipes/fishcurry.html">Kerala Fish Curry</a>
-  <br>
-  <a href="recipes/biriyani.html">Biriyani</a>
-  <br>
-  <a href="recipes/porotta_beefcurry.html">Porotta & Beef Curry</a>
-  
+
+    <h1>Odin Recipes</h1>
+
+    <a href="recipes/fishcurry.html" class="recipe">
+        <h2>Kerala Fish Curry</h2>
+    </a>
+
+    <a href="recipes/biriyani.html" class="recipe">
+        <h2>Biriyani</h2>
+    </a>
+
+    <a href="recipes/porotta_beefcurry.html" class="recipe">
+        <h2>Porotta & Beef Curry</h2>
+    </a>
+
 </body>
 </html>
